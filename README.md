@@ -48,5 +48,5 @@ CREATE INDEX ON shekhar_upwork.queryable_users (email);
 
 ## Install requirements
 ```
-pip install faker, cqlsh, time_uuid, pytz
+pip install faker, cqlsh, time_uuid, pytz, cassandra-driver
 ```

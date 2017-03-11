@@ -25,7 +25,7 @@
     - Wait for the job to be completed.
     - More tables could be created as per the business requirements.
 
-Now, the primary table and Data Model is ready. Check the Jupyter Notebook file demo files to go through some queries.
+Now, the primary table and Data Model is ready. Check the Jupyter Notebook demo files to go through some queries.
 
 ### How it works?
 1. Spark generates dummy data and ingests that from Dataframe/RDD into a Cassandra table events_store.

@@ -1,23 +1,15 @@
 ## Spark-Cassandra
 
-<br>
-1. `data_generator.py`: Spark Job to create fake data and store into Cassandra
-<br>
-2. `data_faker.py`: Designs the payload for fake data
-<br>
-3. `modelling.py`: Creates Data Models from primary table of JSON data
-<br>
-4. `queryable.py`: Allows to write SQL query on Data Models, using Spark as backend.
-<br>
-5. `config.py.sample`: Copy the file to `config.py` and set values.
-<br>
-<br>
+* `data_generator.py`: Spark Job to create fake data and store into Cassandra
+* `data_faker.py`: Designs the payload for fake data
+* `modelling.py`: Creates Data Models from primary table of JSON data
+* `queryable.py`: Allows to write SQL query on Data Models, using Spark as backend.
+* `config.py.sample`: Copy the file to `config.py` and set values.
+
 ## Execution
 ```
 spark-submit --packages com.datastax.spark:spark-cassandra-connector_2.10:1.6.2 data_generator.py
 ```
-<br>
-<br>
 
 ## Setup of Cassandra's Schema
 ```sql

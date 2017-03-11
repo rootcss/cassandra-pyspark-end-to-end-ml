@@ -2,6 +2,9 @@
 
 ### Step by step guide to execute jobs
 
+0. Install requirements
+    - `pip install faker, cqlsh, time_uuid, pytz, cassandra-driver`
+
 1. Create the file `config.py` by copying config.py.sample
     - Setup all the values accordingly.
     - Cassandra variables defines which server to use.

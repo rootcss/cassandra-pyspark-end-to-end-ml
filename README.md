@@ -6,6 +6,4 @@
 * `queryable.py`: Allows to write SQL query on Data Models, using Spark as backend.
 * `config.py.sample`: Copy the file to `config.py` and set values.
 
-```
-
 Check HOWTO file.

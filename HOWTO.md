@@ -50,7 +50,7 @@ Following Jupyter Notebooks are available:
 2. `spark_query_demo.ipynb`
 3. `graph_data/query_demo.ipynb`
 
-## Info about Data inside Cassandra.
+## Info/Stats about Data inside Cassandra.
 - I've created two keyspaces: `shekhar_upwork` and `shekhar_upwork_graph`
 - `shekhar_upwork`
     - Contains JSON event table `events_store` (1,100,100 records)

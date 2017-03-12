@@ -27,7 +27,11 @@
 
 Now, the primary table and Data Model is ready. Check the Jupyter Notebook demo files to go through some queries.
 
+5. Analysis and Machine Learning with Pyspark on Cassandra Data:
+    - Check the `ml.ipynb` file for step by step instructions
+
 ### How it works?
 1. Spark generates dummy data and ingests that from Dataframe/RDD into a Cassandra table events_store.
 2. Once the events_store is ready, Data models are created using a Spark Job. This processes the events_store data in batch, and ingest the data into data models.
 3. Now, all these tables could be easily queried as shown in the demo files.
+4. For machine learning and analysis, Pyspark fetches data from Cassandra and then processing happens on Spark Dataframes/RDD.

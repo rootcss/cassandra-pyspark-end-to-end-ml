@@ -35,3 +35,17 @@ Now, the primary table and Data Model is ready. Check the Jupyter Notebook demo 
 2. Once the events_store is ready, Data models are created using a Spark Job. This processes the events_store data in batch, and ingest the data into data models.
 3. Now, all these tables could be easily queried as shown in the demo files.
 4. For machine learning and analysis, Pyspark fetches data from Cassandra and then processing happens on Spark Dataframes/RDD.
+
+
+## Dummy Graph Data Tables
+1. Go inside the folder `graph_data`
+2. Rename `config.py.sample` as `config.py` and update the values accordingly.
+3. Create the schema using python script: `python schema_creator.py`
+4. Execute the Pyspark Job `data_generator.py`
+    - `spark-submit --packages com.datastax.spark:spark-cassandra-connector_2.10:1.6.2 data_generator.py`
+
+## Demo Files
+Following Jupyter Notebooks are available:
+1. `cassandra_query_demo.ipynb`
+2. `spark_query_demo.ipynb`
+3. `graph_data/query_demo.ipynb`

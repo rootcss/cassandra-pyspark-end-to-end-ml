@@ -7,4 +7,5 @@
 * `config.py.sample`: Copy the file to `config.py` and set values.
 * `schema_creator.py`: Creates the required schema in Cassandra.
 
-Check HOWTO file for all instructions.
+- Check HOWTO file for all instructions.
+- Scripts to create dummy graph data is inside the folder `graph_data`, for which usage same as above scripts.

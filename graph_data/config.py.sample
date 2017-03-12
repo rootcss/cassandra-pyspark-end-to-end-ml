@@ -1,0 +1,15 @@
+# Cassandra related constants
+CASSANDRA_HOST      = "localhost"
+CASSANDRA_USERNAME  = "cassandra"
+CASSANDRA_PASSWORD  = "cassandra"
+CASSANDRA_PORT      = 9042
+KEYSPACE            = "shekhar_upwork_graph"
+TABLE_EDGES         = "graph_edges"
+TABLE_VERTICES      = "graph_vertices"
+
+# Spark related constants
+MASTER              = "local[*]"
+APPNAME             = "PySpark Cassandra"
+
+# Miscellaneous
+NUM_OF_RECORDS      = 10

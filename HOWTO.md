@@ -2,24 +2,24 @@
 
 ### Step by step guide to execute jobs
 
-0. Install requirements
+1. Install requirements
     - `pip install faker, cqlsh, time_uuid, pytz, cassandra-driver`
 
-1. Create the file `config.py` by copying/renaming `config.py.sample`
+2. Create the file `config.py` by copying/renaming `config.py.sample`
     - Setup all the values accordingly.
     - Cassandra variables define which server to use.
 
-2. Create the keyspace and all the tables.
+3. Create the keyspace and all the tables.
     - Execute `schema_creator.py`
     - Note that, if you choose to drop the keypsace, all the data in that keyspace will be deleted.
 
-3. Generating dummy data:
+4. Generating dummy data:
     - Configure `NUM_OF_RECORDS` in `config.py`. This tells the number of dummy records to be created.
     - Execute the Pyspark job `data_generator.py`
     - `spark-submit --packages com.datastax.spark:spark-cassandra-connector_2.10:1.6.2 data_generator.py`
     - Wait for the job to be completed. It can be tracked in Spark UI.
 
-4. Creating Data Models from above created events:
+5. Creating Data Models from above created events:
     - Execute the Pyspark job `modelling.py`
     - `spark-submit --packages com.datastax.spark:spark-cassandra-connector_2.10:1.6.2 modelling.py`
     - Wait for the job to be completed.
@@ -27,7 +27,7 @@
 
 Now, the primary table and Data Model is ready. Check the Jupyter Notebook demo files to go through some queries.
 
-5. Analysis and Machine Learning with Pyspark on Cassandra Data:
+1. Analysis and Machine Learning with Pyspark on Cassandra Data:
     - Check the `ml.ipynb` file for step by step instructions
 
 ### How it works?

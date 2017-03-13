@@ -29,6 +29,10 @@ Now, the primary table and Data Model is ready. Check the Jupyter Notebook demo 
 
 1. Analysis and Machine Learning with Pyspark on Cassandra Data:
     - Check the `ml.ipynb` file for step by step instructions
+2. Online/Offline ML models:
+    - Check `ml-offline.ipynb` file - offline model
+    - Check `ml-online.ipynb` file - online model
+    - Offline model is run on schedule and the model file is extracted and passed on to be used by Online model
 
 ### How it works?
 1. Spark generates dummy data and ingests that from Dataframe/RDD into a Cassandra table events_store.

@@ -3,7 +3,7 @@ CASSANDRA_HOST      = "localhost"
 CASSANDRA_USERNAME  = "cassandra"
 CASSANDRA_PASSWORD  = "cassandra"
 CASSANDRA_PORT      = 9042
-KEYSPACE            = "shekhar_upwork"
+KEYSPACE            = "shekhar_test"
 TABLE_EVENT_STORE   = "events_store"
 TABLE_QUERYABLE     = "queryable_users"
 

@@ -53,13 +53,3 @@ Following Jupyter Notebooks are available:
 1. `cassandra_query_demo.ipynb`
 2. `spark_query_demo.ipynb`
 3. `graph_data/query_demo.ipynb`
-
-## Info/Stats about Data inside Cassandra.
-- I've created two keyspaces: `shekhar_upwork` and `shekhar_upwork_graph`
-- `shekhar_upwork`
-    - Contains JSON event table `events_store` (1,100,100 records)
-    - Contains data model table `queryable_users` (1,100,100 records)
-- `shekhar_upwork_graph`
-    - Contains Edges table `graph_edges` (1,000,200 records)
-    - Contains Vertices table `graph_vertices` (1,000,200 records)
-- All tables contain more than a million records.
